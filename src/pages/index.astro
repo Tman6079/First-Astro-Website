@@ -1,14 +1,19 @@
 ---
 import MyButton from "../components/my-button.astro";
 import ReactComponent from "../components/reactComponent";
+const pageTitle = "I got a massive Potato";
+import "../styles/global.css";
 ---
 
 <a href="/">Home</a>
 <a href="/about/">About</a>
 <a href="/blog/">Blog</a>
+<head>
+  <title>{pageTitle}</title>
+</head>
 
 <main>
-  <h1 id="myTitle">asdf</h1>
+  <h1 id="pageTitle">asdf</h1>
   <h2>asdf</h2>
   <p>
     This paragraph contains a lot of lines in the source code, but the browser
