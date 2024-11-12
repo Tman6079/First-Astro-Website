@@ -2,7 +2,9 @@
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import "../styles/global.css";
-const pageTitle = "Home Page";
+const pageTitle = { pageTitle };
+const introToPage = { introToPage };
+const pageContent = { pageContent };
 ---
 
 <html lang="en">
@@ -16,6 +18,8 @@ const pageTitle = "Home Page";
   <body>
     <Header />
     <h1>{pageTitle}</h1>
+    <h2>{introToPage}</h2>
+    <p>{pageContent}</p>
     <slot />
     <Footer />
     <script>
