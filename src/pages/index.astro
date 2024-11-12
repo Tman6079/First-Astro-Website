@@ -5,7 +5,6 @@ const introToPage = "This would be the content for the intro H2 tag";
 const pageContent = "This would be the actual content for the page";
 ---
 
-<BaseLayout pageTitle={pageTitle}>
-  <h2>{introToPage}</h2>
-  <p>{pageContent}</p>
+<BaseLayout pageTitle={pageTitle} introToPage={introToPage} pageContent={pageContent}>
+  <button>hi</button>
 </BaseLayout>
