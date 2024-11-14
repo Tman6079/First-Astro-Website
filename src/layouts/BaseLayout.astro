@@ -9,6 +9,7 @@ import "../styles/global.css";
 
 const { pageTitle, introToPage, pageContent } = Astro.props;
 ---
+
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -22,7 +23,7 @@ const { pageTitle, introToPage, pageContent } = Astro.props;
     <h1>{pageTitle}</h1>
     <h2>{introToPage}</h2>
     <p>{pageContent}</p>
-    <slot />   // <button>hi</button>
+    <slot />
     <Footer />
     <script>
       import "../scripts/menu.js";
